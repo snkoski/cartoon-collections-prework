@@ -23,6 +23,8 @@ def find_the_cheese(ingredients)# code an argument here
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
   ingredients.any? do |ingredient|
-    cheese_types.include?(ingredient)
+    if cheese_types.include?(ingredient)
+      ingredient
+    end
   end
 end
